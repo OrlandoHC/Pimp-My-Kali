@@ -54,8 +54,8 @@ echo -e "
 ##  |    |  |  | |        |  |  |     |  \ /~~\ |___ |    ##
 ##                                                        ##
 ##                        1.0-beta                        ##
-##               By: Masterk3y (@OrlandoHC) 	            ##
-##                    www.orlahdohc.org     	            ## 
+##               By: Masterk3y (@OrlandoHC) 	          ##
+##                    www.orlahdohc.org     	          ## 
 ##                                                        ##
 ############################################################
 \n"
