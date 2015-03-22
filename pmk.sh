@@ -1,6 +1,20 @@
 #!/bin/bash
+if [[ $EUID -ne 0 ]]; then
+echo "Este script debe ser ejecutado por el usuario Root" 1>&2
+exit 1
+fi
 # LISTA DE CAMBIOS
-# Versión 1.0 alpha
+# Versión 1.0 beta
+#-MODS
+#	- Condición de Ejecución restrictiva para usuarios Root.
+#	- Comprobación de Conexion a Internet, En caso de no contar con conexión el script aborta.
+#	- Al finalizar, Pimp My Kali reinicia el sistema en 1 minuto para que surtan efecto las modificaciones.
+#	- Dentro del Banner se agrego mi pagina web www.orlandohc.org y el @OrlandoHC esto con fines informativos y didácticos.
+#	- Marcas Sleep para facil comprensión del usuario acerca proceso que se lleva a cabo en tiempo real. 
+#-APPS
+#	- Se Eliminó Open Office de la lista de Apps, esto para disminuir el tiempo, se tiene pensado incluir Evernote.
+#
+# Versión 1.1 alpha
 #-MODS
 #	- Interfaz que lanza el script correspondiente para personalizar Kali Linux.
 #	- Desactivación De Cursos Parpadeante.
@@ -39,15 +53,28 @@ echo -e "
 ##  |__) |  |\/| |__)     |\/| \ /    |__/  /\  |    |    ##
 ##  |    |  |  | |        |  |  |     |  \ /~~\ |___ |    ##
 ##                                                        ##
-##                        1.1-alpha                       ##
-##               By: Masterk3y (OrlandoHC)                ##
+##                        1.0-beta                        ##
+##               By: Masterk3y (@OrlandoHC) 	            ##
+##                    www.orlahdohc.org     	            ## 
 ##                                                        ##
 ############################################################
 \n"
 echo -e "\033[1;37mScript para Personalizar Kali Linux\033[0m \n\n "
-echo -e "Deseas Personalizar tu Kali Linux ? [ \033[0;32mSi\033[0m / \033[0;31mNo\033[0m ]: \c ";
+echo -e "\033[1;37mInstrucciones: S = SI   N = NO (Mayuscula)\033[0m \n\n "
+echo -e "¿Deseas Personalizar tu Kali Linux? [ \033[0;32mS\033[0m / \033[0;31mN\033[0m ]: \c ";
 read respuesta
-if [ $respuesta = "Si" ]; then
+if [ $respuesta = "S" ]; then
+echo -e "\033[0;31m[+]\033[0m Comprobando Conexion a Internet...";
+sleep 3
+if [ "`ping -c 1 www.google.com`" ]
+then
+	echo -e "\033[0;31m[+]\033[0m Ping Exitoso, Status = Conectado";
+	sleep 3
+	else
+	echo -e "\033[0;31m[+]\033[0m Ping Muerto, Al parecer no tienes conexion a Internet, Verifica y reintenta nuevamente."; exit 1 
+fi
+sleep 3
+echo -e "\033[0;31m[+]\033[0m Comenzando Personalización";
 echo -e "\033[0;31m[+]\033[0m Deshabilitando Cursor Parpadeante";
 gsettings set org.gnome.desktop.interface cursor-blink false
 echo -e "\033[0;31m[+]\033[0m Instalando Ark ";
@@ -56,8 +83,6 @@ echo -e "\033[0;31m[+]\033[0m Instalando Gnome Tweak Tool";
 apt-get install gnome-tweak-tool
 echo -e "\033[0;31m[+]\033[0m Instalando HTop";
 apt-get install htop
-echo -e "\033[0;31m[+]\033[0m Instalando Open Office";
-apt-get install openoffice.org-writer openoffice.org-calc openoffice.org-impress
 echo -e "\033[0;31m[+]\033[0m Instalando Audacious ";
 apt-get install audacious
 echo -e "\033[0;31m[+]\033[0m Instalando Shutter";
@@ -104,9 +129,13 @@ unzip $i
 done
 mv Numix/ /usr/share/themes
 mv elementary/ /usr/share/icons
+sleep 3
 echo -e $green"\033[0;31m[+]\033[0m Instalación Exitosa!";
+sleep 3
+echo -e "\033[0;31m[+]\033[0m Kali Se Reiniciará para que los cambios surtan efecto. Guarda tu trabajo"
+shutdown -r +1
 fi
-if [ $respuesta = "No" ]; then
+if [ $respuesta = "N" ]; then
 echo -e "\033[0;31m \n[-] Operación Cancelada [-]\033[0m";
 fi
 }
