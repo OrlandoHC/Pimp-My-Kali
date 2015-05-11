@@ -4,7 +4,7 @@ echo "Este script debe ser ejecutado por el usuario Root" 1>&2
 exit 1
 fi
 # LISTA DE CAMBIOS
-# Versión 1.0 beta
+# Versión 1.0 beta last update 22/03/2015
 #-MODS
 #	- Condición de Ejecución restrictiva para usuarios Root.
 #	- Comprobación de Conexion a Internet, En caso de no contar con conexión el script aborta.
