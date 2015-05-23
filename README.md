@@ -22,6 +22,7 @@
 <div style="text-align: justify;">
 <b></b>
 <b>Pimp My Kali</b>&nbsp; es un script no oficial desarrollado en <a href="http://es.wikipedia.org/wiki/Bash" target="_blank">Bash</a> que&nbsp;<b>recopila e instala modificaciones y aplicaciones a Kali Linux despues de su instalación.</b></div>
+<b></b>
 <div style="text-align: justify;">
 <b></b>
 <!--more--><b>¿A quien va enfocado?&nbsp;</b>
