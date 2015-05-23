@@ -4,6 +4,7 @@
 <b><span style="font-size: large;">Pimp My Kali&nbsp;1.0-Beta&nbsp;</span></b></div>
 <div class="separator" style="clear: both; text-align: center;">
 <b>(rev-22-03-2015)</b></div>
+<b></b>
 <div class="separator" style="clear: both; text-align: center;">
 
 </div>
@@ -19,6 +20,7 @@
 </div>
 </div>
 <div style="text-align: justify;">
+<b></b>
 <b>Pimp My Kali</b>&nbsp; es un script no oficial desarrollado en <a href="http://es.wikipedia.org/wiki/Bash" target="_blank">Bash</a> que&nbsp;<b>recopila e instala modificaciones y aplicaciones a Kali Linux despues de su instalación.</b></div>
 <div style="text-align: justify;">
 <b></b>
