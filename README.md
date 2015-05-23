@@ -14,9 +14,6 @@
 <div class="separator" style="clear: both; text-align: center;">
 </div>
 <div style="text-align: center;">
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-cGDpTfU26_U/VRHjsJqKJJI/AAAAAAAAGDM/vmBAWAHjcbw/s1600/Kali%2BTest%2BMachine.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="300" src="http://3.bp.blogspot.com/-cGDpTfU26_U/VRHjsJqKJJI/AAAAAAAAGDM/vmBAWAHjcbw/s1600/Kali%2BTest%2BMachine.png" width="400" /></a></div>
-
 </div>
 </div>
 <div style="text-align: justify;">
@@ -38,9 +35,10 @@
 <b>R: Mi respuesta es, un arma más al arsenal de un entusiasta de la seguridad de sistemas y las herramientas de hacking/cracking, y a quien no le gusta tener su distro pimpeada (personalizada) y lista para una auditoria, montaje de un escenario informatico-forense o incluso Cyber Guerra (en el peor pero nada imposible de los casos), A mi en lo personal,&nbsp;Si, ya que poseo dual boot entre Windows 8.1 (10) y Kali Linux 1.1.0a.&nbsp;</b></div>
 </div>
 <div style="text-align: justify;">
-
 </div>
+
 <div style="text-align: justify;">
+
 <b>Mods:</b>
 <ul>
 <li><b>Condición de Ejecución restrictiva para usuarios Root.</b></li>
