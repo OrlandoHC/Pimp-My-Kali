@@ -70,7 +70,7 @@ echo -e "
 ##                                                        ##
 ##                         1.1-beta                       ##
 ##                By: Masterk3y (@OrlandoHC) 	          ##
-##                    www.orlahdohc.org      	          ##
+##                    www.orlandohc.org      	          ##
 ##                                                        ##
 ############################################################
 "
