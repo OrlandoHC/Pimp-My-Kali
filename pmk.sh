@@ -11,7 +11,7 @@ fi
 # - Detector de Arquitectura de Sistema Operativo para x86/x64.
 # - Se suplieron las apps k3b y Ark debido al gran tamaño de la instalacion.
 # - Apertura del Blog del Desarrollador para agregar un comentario.
-# - Comando De Limpieza Post-Instalacion
+# - Comando De Limpieza Post-Instalacion.
 #-APPS
 #	- Debreate (Compilador de Paquetes .deb)
 #	- Se agregó BruteX (Ataques Fuerza Bruta)
